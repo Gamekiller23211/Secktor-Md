@@ -28,7 +28,7 @@ async(Void, citel,text) => {
         let {data} = await axios.get(`http://api.brainshop.ai/get?bid=167991&key=aozpOoNOy3dfLgmB&uid=[${citel.sender.split("@")[0]}]&msg=[${text}]`);
         return citel.reply(data.cnt);  
     }
-    if (!text) return citel.reply(`Hey there! ${citel.pushName}. How are you doing these days?`);
+    if (!text) return citel.reply(`Hallo! ${citel.pushName}. Wie gehts dir Heute?`);
     // const { Configuration, OpenAIApi } = require("openai");
     // const configuration = new Configuration({
     //     apiKey: Config.OPENAI_API_KEY || "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",
@@ -158,7 +158,7 @@ cmd({
         latensie = speed() - timestampe;
         let ter = `
 🔰 *${tlang().title}* 🔰
-*🌟Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
+*🌟Description:* Dieser Bot ist momentan nur ein Test.
 *⚡Speed:* ${latensie.toFixed(4)} ms
 *🚦Uptime:* ${runtime(process.uptime())}
 *🕸Version:* 0.0.7
